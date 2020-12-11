@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+  <link rel="manifest" href="image/site.webmanifest">
+  <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>KeepYoga -Добавить статью</title>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <a class="navbar-brand" href="index.html">
+    <img src="image/logo.png" alt="Лого" >
+ </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Главная</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="articles.html">Статьи <span class="sr-only">(current)</span></a>
+      </div>
+    </div>
+  </nav>
+  <p class="header">Добавить статью </p>
+  <hr class="hr-line">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputName">Введите название статьи</label>
+            <input type="text" class="form-control" id="exampleInputnName" placeholder="Название статьи">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputАuthor">Введите имя автора</label>
+            <input type="text" class="form-control" id="exampleInputАuthor" placeholder="Имя автора статьи">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputText">Введите текст статьи</label>
+            <textarea class="form-control text" id="Textarea" placeholder="Текст статьи" required></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm">
+        <label for="exampleInputText">Выберите тематику статьи</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Основы йоги
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Асаны
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+          <label class="form-check-label" for="gridRadios3">
+            Медитации
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+          <label class="form-check-label" for="gridRadios3">
+            Пранаяма
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+          <label class="form-check-label" for="gridRadios4">
+            Шаткармы
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+          <label class="form-check-label" for="gridRadios4">
+            Мантры
+          </label>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputAnnotation">Введите текст аннотации</label>
+          <textarea class="form-control annotation" id="Textarea" placeholder="Текст аннотации" required></textarea>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Загрузите превью</label>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Выберите файл</label>
+                </div>
+                <img style="margin-top:10px" src="image/img3.jpg" class="card-img-top" alt="...">
+
+              </div>
+          </div>
+          <div class="col-sm-2">
+            <a class="color" href="articles.html" type="button">Добавить</a>
+          </div>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+
+</html>
