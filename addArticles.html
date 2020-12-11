@@ -8,8 +8,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
   <link rel="manifest" href="image/site.webmanifest">
   <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <script src="site.js"></script>
+
   <title>KeepYoga -Добавить статью</title>
 
   <!-- CSS only -->
@@ -27,9 +30,26 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(70387051, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/70387051" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 
 </head>
-<body>
+<body onload="register()">
   <a class="navbar-brand" href="index.html">
     <img src="image/logo.png" alt="Лого" >
  </a>
@@ -47,24 +67,24 @@
   </nav>
   <p class="header">Добавить статью </p>
   <hr class="hr-line">
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm">
         <form>
           <div class="form-group">
+           
             <label for="exampleInputName">Введите название статьи</label>
-            <input type="text" class="form-control" id="exampleInputnName" placeholder="Название статьи">
+            <input type="text" class="form-control" id="name" name="name"  placeholder="Название статьи">
           </div>
           <div class="form-group">
             <label for="exampleInputАuthor">Введите имя автора</label>
-            <input type="text" class="form-control" id="exampleInputАuthor" placeholder="Имя автора статьи">
+            <input type="text" class="form-control" id="nameАuthor" name="nameАuthor"   placeholder="Имя автора статьи">
           </div>
           <div class="form-group">
             <label for="exampleInputText">Введите текст статьи</label>
-            <textarea class="form-control text" id="Textarea" placeholder="Текст статьи" required></textarea>
+            <textarea class="form-control text" id="text"  name="text"  placeholder="Текст статьи" ></textarea>
+            
           </div>
-        </form>
       </div>
       <div class="col-sm">
         <label for="exampleInputText">Выберите тематику статьи</label>
@@ -104,14 +124,13 @@
             Мантры
           </label>
         </div>
-        <br>
+        <br>       
         <div class="form-group">
           <label for="exampleInputAnnotation">Введите текст аннотации</label>
-          <textarea class="form-control annotation" id="Textarea" placeholder="Текст аннотации" required></textarea>
+          <textarea class="form-control annotation" id="annotation" name="annotation" placeholder="Текст аннотации" ></textarea>
         </div>
         <div class="row">
-          <div class="col-sm-8">
-            <form>
+          <div class="col-sm-8">      
               <div class="form-group">
                 <label for="exampleFormControlFile1">Загрузите превью</label>
                 <div class="custom-file">
@@ -120,19 +139,17 @@
                 </div>
                 <img style="margin-top:10px" src="image/img3.jpg" class="card-img-top" alt="...">
 
+            
               </div>
           </div>
           <div class="col-sm-2">
-            <a class="color" href="articles.html" type="button">Добавить</a>
+            <button class="color" type="submit">Добавить</button>
+
           </div>
-
-
-          </form>
         </div>
+      </form>
       </div>
     </div>
-
-
 </body>
 
 </html>
